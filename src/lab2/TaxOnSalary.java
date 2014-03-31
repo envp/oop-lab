@@ -64,11 +64,11 @@ public class TaxOnSalary {
 	/**
 	 * Method for computing the tax based on salary [caculateTax() : double] is supplied. The tax is calculated as per the rules shown below:
 	 * <ol>
-	 * <li>if salary < 180000 and isPANsubmitted = true, then tax payable is zero</li>
-	 * <li>if salary < 180000 and isPANsubmitted = false, then tax payable is 5% of the salary</li>
-	 * <li>if 180000 < salary < 500000, then tax payable is 10% of the salary</li>
-	 * <li>if 500000 < salary < 1000000, then tax payable is 20% of the salary</li>
-	 * <li>if 1000000 < salary, then tax payable is 30% of the salary</li>
+	 * <li>if salary &lt; 180000 and isPANsubmitted = true, then tax payable is zero</li>
+	 * <li>if salary &lt; 180000 and isPANsubmitted = false, then tax payable is 5% of the salary</li>
+	 * <li>if 180000 &lt; salary &lt; 500000, then tax payable is 10% of the salary</li>
+	 * <li>if 500000 &lt; salary &lt; 1000000, then tax payable is 20% of the salary</li>
+	 * <li>if 1000000 &lt; salary, then tax payable is 30% of the salary</li>
 	 * </ol>
 	 * @return tax:double, the tax payable
 	 */
