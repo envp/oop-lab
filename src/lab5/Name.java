@@ -8,10 +8,10 @@ import java.util.StringTokenizer;
  */
 public class Name {
 	// Constant reperesenting comma for delimiting the name
-	private final String DELIMITER_COMMA = ",";
+	private final static String DELIMITER_COMMA = ",";
 	
 	// Constant reperesenting semi-colon for delimiting the name
-	private final String DELIMITER_SEMI_COLON = ";";
+	private final static String DELIMITER_SEMI_COLON = ";";
 	// First name
 	private String fname;
 	
@@ -62,8 +62,8 @@ public class Name {
 	 */
 	Name(String name) {
 		// Create two tokenizers, one each for , and ; delimited names
-		StringTokenizer sTokComma = new StringTokenizer(name, DELIMITER_COMMA);
-		StringTokenizer sTokSemiColon = new StringTokenizer(name, DELIMITER_SEMI_COLON);
+		StringTokenizer sTokComma = new StringTokenizer(name, Name.DELIMITER_COMMA);
+		StringTokenizer sTokSemiColon = new StringTokenizer(name, Name.DELIMITER_SEMI_COLON);
 		
 		// Assume that incomplete names are never supplied
 		// Implying: We must get 3 tokens

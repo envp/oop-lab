@@ -1,3 +1,7 @@
 # Java
 bin/*
 src/lab*/*.class
+
+#Eclipse
+.classpath
+.project
