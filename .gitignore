@@ -2,6 +2,7 @@
 bin/*
 src/lab*/*.class
 
-#Eclipse
+# Eclipse
 .classpath
 .project
+/nbproject/private/

@@ -54,9 +54,13 @@ public class Name {
 		return getFname() + " " + getMname() + " " + getLname();
 	}
 	
+	public String toString() {
+		return getFname() + getMname() + getLname();
+	}
+	
 	/**
 	 * Constructor for the Name class
-	 * Accepts &lt;First Name>,&lt;MiddleName&gt;,&lt;LastName&gt; or &lt;LastName&gt;;&lt;MiddleName&gt;;&lt;FirstName&gt;
+	 * Accepts &lt;First Name&gt;,&lt;MiddleName&gt;,&lt;LastName&gt; or &lt;LastName&gt;;&lt;MiddleName&gt;;&lt;FirstName&gt;
 	 * and tokenizes them to the appropriate fields 
 	 * @param name String name delimited by , or ; check header for details
 	 */
@@ -84,7 +88,7 @@ public class Name {
 			// Actually try throw a MalformedNameException but later
 			System.err.println("MalformedNameException: Name must only be" +
 					"<FirstName>,<MiddleName>,<LastName> or" +
-					"<LastName>;<MiddleName>;<FirstName>" +	"!");
+					"<LastName>;<MiddleName>;<FirstName>");
 		}
 	}
 }
