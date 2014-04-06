@@ -36,7 +36,7 @@ public class AddressList {
 	 * If the length of any passed argument is zero 
 	 * or value of any passed argument is null then it returns -1.
 	 * @param addressList List of addresses
-	 * @param pin pincode to search for
+	 * @param strP pincode to search for
 	 * @return pincount or -1
 	 */
 	public static int countAddressWithPin(Address[] addressList, String strP) {
