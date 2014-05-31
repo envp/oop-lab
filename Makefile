@@ -26,7 +26,7 @@ clean_doc:
 	# Clean up old docs
 	echo "[info] Cleaning up old docs"
 	rm -r -v $(DOC_PATH)	
-	
+
 doc: clean_doc
 	# new docs
 	echo "[info] Generating updated documentation"
