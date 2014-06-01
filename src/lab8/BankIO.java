@@ -4,6 +4,7 @@
 package lab8;
 
 import java.io.File;
+import java.io.PrintWriter;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
@@ -44,6 +45,23 @@ public class BankIO {
 		int acctNum = Integer.parseInt(lineData[0]);
 		double initialBalance = Double.parseDouble(lineData[1]);
 		return new BankAccount(initialBalance, acctNum);
+	}
+	
+	/**
+	 * Write bank account data to a file in a readAccount compatible format
+	 * @param filename Name of target file 
+	 * @param bank Bank instance to be serialized
+	 */
+	public static void writeAccount(String filename, Bank bank) {
+		PrintWriter out;
+		try {
+			out = new PrintWriter(filename);
+			out.write(bank.toString());
+		}
+		catch(FileNotFoundException exception) {
+			System.out.println("*** ERROR ***\n" + "File '" +
+				filename + "' was not found");
+		}
 	}
 	
 }
